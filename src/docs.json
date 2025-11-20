@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "palm",
+  "theme": "aspen",
   "name": "Docs by LangChain",
   "description": "Documentation for LangChain, LangGraph, LangSmith, and more.",
   "colors": {
@@ -102,11 +102,15 @@
     }
   },
   "banner": {
-    "content": "We've raised a $125M Series B to build the platform for agent engineering. [Read more](https://blog.langchain.com/series-b/?utm_medium=internal&utm_source=docs&utm_campaign=q4-2025_october-launch-week_aw).",
-    "dismissible": true
+    "content": "🚀 [Share how you're building agents](https://bit.ly/agent-engineering-survey) for a chance to win LangChain swag!"
   },
   "navbar": {
     "links": [
+      {
+        "label": "Ask AI",
+        "href": "https://chat.langchain.com/",
+        "icon": "message"
+      },
       {
         "label": "GitHub",
         "href": "https://github.com/langchain-ai",
@@ -165,8 +169,15 @@
                         "oss/python/langchain/tools",
                         "oss/python/langchain/short-term-memory",
                         "oss/python/langchain/streaming",
-                        "oss/python/langchain/middleware",
                         "oss/python/langchain/structured-output"
+                      ]
+                    },
+                    {
+                      "group": "Middleware",
+                      "pages": [
+                        "oss/python/langchain/middleware/overview",
+                        "oss/python/langchain/middleware/built-in",
+                        "oss/python/langchain/middleware/custom"
                       ]
                     },
                     {
@@ -183,12 +194,17 @@
                       ]
                     },
                     {
-                      "group": "Use in production",
+                      "group": "Agent development",
                       "pages": [
-                        "oss/python/langchain/studio",
-                        "oss/python/langchain/test",
+                            "oss/python/langchain/studio",
+                            "oss/python/langchain/test",
+                            "oss/python/langchain/ui"
+                      ]
+                    },
+                    {
+                      "group": "Deploy with LangSmith",
+                      "pages": [
                         "oss/python/langchain/deploy",
-                        "oss/python/langchain/ui",
                         "oss/python/langchain/observability"
                       ]
                     }
@@ -231,10 +247,10 @@
                       "group": "Production",
                       "pages": [
                         "oss/python/langgraph/application-structure",
-                        "oss/python/langgraph/studio",
                         "oss/python/langgraph/test",
-                        "oss/python/langgraph/deploy",
+                        "oss/python/langgraph/studio",
                         "oss/python/langgraph/ui",
+                        "oss/python/langgraph/deploy",
                         "oss/python/langgraph/observability"
                       ]
                     },
@@ -244,6 +260,7 @@
                           {
                             "group": "Graph API",
                             "pages": [
+                              "oss/python/langgraph/choosing-apis",
                               "oss/python/langgraph/graph-api",
                               "oss/python/langgraph/use-graph-api"
                             ]
@@ -280,6 +297,12 @@
                         "oss/python/deepagents/human-in-the-loop",
                         "oss/python/deepagents/long-term-memory",
                         "oss/python/deepagents/middleware"
+                      ]
+                    },
+                    {
+                      "group": "Command line interface",
+                      "pages": [
+                        "oss/python/deepagents/cli"
                       ]
                     }
                   ]
@@ -351,6 +374,7 @@
                       "group": "Conceptual overviews",
                       "icon": "book",
                       "pages": [
+                        "oss/python/langchain/component-architecture",
                         "oss/python/concepts/memory",
                         "oss/python/concepts/context",
                         "oss/python/langgraph/graph-api",
@@ -486,8 +510,15 @@
                         "oss/javascript/langchain/tools",
                         "oss/javascript/langchain/short-term-memory",
                         "oss/javascript/langchain/streaming",
-                        "oss/javascript/langchain/middleware",
                         "oss/javascript/langchain/structured-output"
+                      ]
+                    },
+                    {
+                      "group": "Middleware",
+                      "pages": [
+                        "oss/javascript/langchain/middleware/overview",
+                        "oss/javascript/langchain/middleware/built-in",
+                        "oss/javascript/langchain/middleware/custom"
                       ]
                     },
                     {
@@ -504,12 +535,17 @@
                       ]
                     },
                     {
-                      "group": "Use in production",
+                      "group": "Agent development",
                       "pages": [
-                        "oss/javascript/langchain/studio",
-                        "oss/javascript/langchain/test",
+                            "oss/javascript/langchain/studio",
+                            "oss/javascript/langchain/test",
+                            "oss/javascript/langchain/ui"
+                      ]
+                    },
+                    {
+                      "group": "Deploy with LangSmith",
+                      "pages": [
                         "oss/javascript/langchain/deploy",
-                        "oss/javascript/langchain/ui",
                         "oss/javascript/langchain/observability"
                       ]
                     }
@@ -552,10 +588,10 @@
                       "group": "Production",
                       "pages": [
                         "oss/javascript/langgraph/application-structure",
-                        "oss/javascript/langgraph/studio",
                         "oss/javascript/langgraph/test",
-                        "oss/javascript/langgraph/deploy",
+                        "oss/javascript/langgraph/studio",
                         "oss/javascript/langgraph/ui",
+                        "oss/javascript/langgraph/deploy",
                         "oss/javascript/langgraph/observability"
                       ]
                     },
@@ -565,6 +601,7 @@
                         {
                           "group": "Graph API",
                           "pages": [
+                            "oss/javascript/langgraph/choosing-apis",
                             "oss/javascript/langgraph/graph-api",
                             "oss/javascript/langgraph/use-graph-api"
                           ]
@@ -601,6 +638,12 @@
                         "oss/javascript/deepagents/human-in-the-loop",
                         "oss/javascript/deepagents/long-term-memory",
                         "oss/javascript/deepagents/middleware"
+                      ]
+                    },
+                    {
+                      "group": "Deep Agents CLI",
+                      "pages": [
+                        "oss/javascript/deepagents/cli"
                       ]
                     }
                   ]
@@ -701,6 +744,7 @@
                       "group": "Conceptual overviews",
                       "icon": "book",
                       "pages": [
+                        "oss/javascript/langchain/component-architecture",
                         "oss/javascript/concepts/memory",
                         "oss/javascript/concepts/context",
                         "oss/javascript/langgraph/graph-api",
@@ -936,6 +980,7 @@
                         "langsmith/sample-traces"
                       ]
                     },
+                    "langsmith/cost-tracking",
                     {
                       "group": "Advanced tracing techniques",
                       "pages": [
@@ -971,8 +1016,7 @@
                     "langsmith/compare-traces",
                     "langsmith/share-trace",
                     "langsmith/platform-logs",
-                    "langsmith/data-export",
-                    "langsmith/calculate-token-based-costs"
+                    "langsmith/data-export"
                   ]
                 },
                 {
@@ -1070,6 +1114,7 @@
                         "langsmith/repetition",
                         "langsmith/rate-limiting",
                         "langsmith/local",
+                        "langsmith/read-local-experiment-results",
                         "langsmith/langchain-runnable",
                         "langsmith/evaluate-graph",
                         "langsmith/evaluate-existing-experiment",
@@ -1195,6 +1240,7 @@
                       "langsmith/use-remote-graph",
                       "langsmith/semantic-search",
                       "langsmith/configure-ttl",
+                      "langsmith/agent-server-scale",
                       "langsmith/cicd-pipeline-example"
                     ]
                 },
@@ -1296,8 +1342,11 @@
                 {
                   "group": "Reference",
                   "pages": [
-                    "langsmith/remote-graph",
                     "langsmith/cli",
+                    "langsmith/agent-server-api-ref",
+                    "langsmith/langgraph-python-sdk",
+                    "langsmith/langgraph-js-ts-sdk",
+                    "langsmith/remote-graph",
                     "langsmith/env-var"
                   ]
                 }
@@ -1309,6 +1358,7 @@
                 "langsmith/agent-builder",
                 "langsmith/agent-builder-setup",
                 "langsmith/agent-builder-tools",
+                "langsmith/agent-builder-mcp-framework",
                 "langsmith/agent-builder-slack-app"
               ]
             },
@@ -1722,6 +1772,82 @@
     {
       "source": "/langsmith/langgraph-server-changelog",
       "destination": "/langsmith/agent-server-changelog"
+    },
+    {
+      "source": "/oss/python/langchain/middleware",
+      "destination": "/oss/python/langchain/middleware/overview"
+    },
+    {
+      "source": "/oss/javascript/langchain/middleware",
+      "destination": "/oss/javascript/langchain/middleware/overview"
+    },
+    {
+      "source": "/oss/python/integrations/tools/toolbox",
+      "destination": "/oss/python/integrations/tools/mcp_toolbox"
+    },
+    {
+      "source": "/oss/integrations/tools/toolbox",
+      "destination": "/oss/integrations/tools/mcp_toolbox"
+    },
+    {
+      "source": "/oss/python/integrations/tools/gmail",
+      "destination": "/oss/python/integrations/tools/google_gmail"
+    },
+    {
+      "source": "/oss/integrations/tools/gmail",
+      "destination": "/oss/integrations/tools/google_gmail"
+    },
+    {
+      "source": "/oss/javascript/integrations/tools/gmail",
+      "destination": "/oss/javascript/integrations/tools/google_gmail"
+    },
+    {
+      "source": "/oss/python/integrations/chat_loaders/gmail",
+      "destination": "/oss/python/integrations/chat_loaders/google_gmail"
+    },
+    {
+      "source": "/oss/integrations/chat_loaders/gmail",
+      "destination": "/oss/integrations/chat_loaders/google_gmail"
+    },
+    {
+      "source": "/oss/python/integrations/vectorstores/scann",
+      "destination": "/oss/python/integrations/vectorstores/google_scann"
+    },
+    {
+      "source": "/oss/integrations/vectorstores/scann",
+      "destination": "/oss/integrations/vectorstores/google_scann"
+    },
+    {
+      "source": "/oss/python/integrations/chat/google_vertex_ai_palm",
+      "destination": "/oss/python/integrations/chat/google_vertex_ai"
+    },
+    {
+      "source": "/oss/integrations/chat/google_vertex_ai_palm",
+      "destination": "/oss/integrations/chat/google_vertex_ai"
+    },
+    {
+      "source": "/oss/python/integrations/text_embedding/google_vertex_ai_palm",
+      "destination": "/oss/python/integrations/text_embedding/google_vertex_ai"
+    },
+    {
+      "source": "/oss/integrations/text_embedding/google_vertex_ai_palm",
+      "destination": "/oss/integrations/text_embedding/google_vertex_ai"
+    },
+    {
+      "source": "/oss/python/integrations/llms/google_vertex_ai_palm",
+      "destination": "/oss/python/integrations/llms/google_vertex_ai"
+    },
+    {
+      "source": "/oss/integrations/llms/google_vertex_ai_palm",
+      "destination": "/oss/integrations/llms/google_vertex_ai"
+    },
+    {
+      "source": "/oss/javascript/integrations/text_embedding/google_generativeai",
+      "destination": "/oss/javascript/integrations/text_embedding/google_generative_ai"
+    },
+    {
+      "source": "/oss/integrations/text_embedding/google_generativeai",
+      "destination": "/oss/integrations/text_embedding/google_generative_ai"
     }
   ]
 }
