@@ -773,3 +773,8 @@ packages:
   path: libs/voyageai
   downloads: 55000
   downloads_updated_at: "2025-11-10T00:06:22.543193+00:00"
+- name: langchain-oracledb
+  name_title: Oracle AI Vector Search
+  repo: oracle/langchain-oracle
+  downloads: 700
+  downloads_updated_at: "2025-11-25T00:06:22.543193+00:00"
